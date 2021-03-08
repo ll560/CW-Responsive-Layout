@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    background-color: #C6D4FF;
+    height: 90px;
+}
+
+footer {
+    background-color: #FEC196;
+    height:90px;
+}
+
+main {
+    background-color: #F8EFB6;
+    height:100px;
+}
+
+aside.flex-left {
+    background-color: #FACFD7;   
+}
+
+aside.flex-right {
+    background-color: #C2EAE9;
+}
+
+header, footer, aside, main {
+    padding: 1em;
+}
+
+/* ADD YOUR CODE BELOW */
+
+@media screen and (min-width: 700px){
+    .container{
+        display:flex;    
+    }
+    header{
+        width:auto;
+        height:20vh;
+    }
+
+    .flex-left{
+        flex-grow:1;   
+    }
+    
+    main{
+        width:60%;
+        height:60vh;
+    }
+    .flex-right{
+        flex-grow:1;
+    }
+    footer{
+        width:auto;
+        height:20vh;
+    }
+}
